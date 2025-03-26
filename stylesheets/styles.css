@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 62, 36)
+}
+
+header{
+    height: 100vh;
+}
+
+nav{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+.nav-container{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 100px;
+}
+img{
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+li, a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(5, 42, 27);
+    list-style-type: none;
+}
+
+.hero{
+    background-image: url("https://zf2xqj.yourbrand.studio/files/dynamicContent/sites/zf2xqj/images/en/webpage_12/m5p6bgzu/element_280/rwdMode_1/2400x800/Header_Home.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+}
+.text-box{
+    width: 20%;
+    margin-left: 60%;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(1, 42, 25, 0.61)
+}
+
+section{
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 50px;
+}
+
+.sec-1{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.left h1{
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgb(0, 62, 36);
+}
+.left p{
+    color: rgb(1, 29, 17);
+}
+
+.left, .right{
+    width: 40%;
+}
+
+.right img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.cat{
+    color: rgb(0, 62, 36);
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+}
+.art{
+    color: rgb(0, 62, 36);
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.article-block{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 50px;
+}
+.left-side, .right-side{
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.title:hover{
+    cursor: pointer;
+}
+.image-link:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+.left-side h5, .right-side h5{
+    font-weight: 400;
+    color: black;
+    opacity: .4;
+}
+a{
+    color: rgba(43, 76, 3, 0.781);
+}
+
+hr{
+    color: rgba(49, 91, 7, 0.264);
+    margin-bottom: 20px;
+}
+.more{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
