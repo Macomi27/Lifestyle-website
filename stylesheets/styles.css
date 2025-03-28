@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -7,13 +7,14 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lora;
     font-size: 16px;
     color: rgb(0, 62, 36)
 }
 
 header{
     height: 100vh;
+    margin-bottom: 200px;
 }
 
 nav{
@@ -52,14 +53,16 @@ li, a{
     background-image: url("https://zf2xqj.yourbrand.studio/files/dynamicContent/sites/zf2xqj/images/en/webpage_12/m5p6bgzu/element_280/rwdMode_1/2400x800/Header_Home.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 80vh;
-
+    background-position: bottom;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-box{
     width: 20%;
-    margin-left: 60%;
-    font-size: 28px;
+    margin-left: 30%;
+    font-size: 48px;
     font-weight: 500;
     text-align: left;
     color: rgba(1, 42, 25, 0.61)
@@ -98,12 +101,60 @@ section{
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.sec-cat{
+    width: 90%;
+}
 .cat{
     color: rgb(0, 62, 36);
     text-align: center;
     font-weight: 400;
     font-size: 32px;
 }
+
+.grid-container{
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+}
+.cat-title{
+    width: 210px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cat-title{
+    color: white;
+    background-color: rgb(77, 115, 99);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+}
+.cat-title:hover{
+    background-color: rgb(1, 49, 1);
+    cursor: pointer;
+}
+
+.grid-text{
+    text-align: center;
+    margin-inline: auto;
+}
+.grid-text p{
+    line-height: 1.5;
+}
+
 .art{
     color: rgb(0, 62, 36);
     text-align: center;
@@ -123,11 +174,14 @@ section{
     gap: 1rem;
 }
 .title{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
 }
 .title:hover{
     cursor: pointer;
+}
+.left-side h5{
+    font-size: 16px;
 }
 .image-link:hover{
     cursor: pointer;
@@ -156,3 +210,5 @@ hr{
     text-decoration: underline;
     cursor: pointer;
 }
+
+
