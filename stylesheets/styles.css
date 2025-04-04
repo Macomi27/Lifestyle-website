@@ -43,7 +43,7 @@ img{
 .nav-list{
     visibility: hidden;
 }
-.links-nav{
+.desktop-nav{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -403,15 +403,27 @@ footer{
         width: 100%;
         margin-bottom: 30px;
      }
+     nav a{
+        font-size: 20px;
+        color: gray;
+     }
      .logo{
         width: 50px;
      }
     .nav-list{
+        width: 50px;
         visibility: visible;
     }
-    .links-nav{
-        width: 50px;
-        visibility: hidden;
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        gap: 5px;
+        padding-block: 10px;
     }
     .hero{
         width: 100%;
