@@ -18,6 +18,7 @@ header{
 }
 
 nav{
+    /* height: 20vh; */
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
     position: fixed;
@@ -26,12 +27,13 @@ nav{
 }
 
 .nav-container{
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: relative;
+    z-index: 99;
 }
 
 .logo{
@@ -40,13 +42,19 @@ nav{
 img{
     width: 100%;
 }
-.nav-list{
-    visibility: hidden;
+.nav-icons{
+    display: none;
 }
 .desktop-nav{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+}
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-links{
+    display: none;
 }
 li, a{
     text-decoration: none;
@@ -284,17 +292,17 @@ hr{
     margin-bottom: 30px;
 }
 
-.cont{
+.cont{ 
     display: flex;
     gap: 20px;
     width: 100%;
+    overflow: hidden;
 
 }
 .cont img{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    overflow: hidden;
 }
 .cont img:hover{
     cursor: pointer;
@@ -307,15 +315,15 @@ hr{
     margin-bottom: 10px;
 }
 .cont p{
-    text-align: justify;
+    text-align: left;
     line-height: 1.4;
 }
 
-.sec-6{
-    width: 70%;
+.sec-5{
+    width: 60%;
     margin-inline: auto;
 }
-.sec-6 h1{
+.sec-5 h1{
     margin-bottom: 40px;
 }
 
@@ -355,7 +363,8 @@ textarea::placeholder{
 }
 
 footer{
-    height: 150px;
+    /* height: 150px; */
+    padding-block: 20px;
     background-color: rgb(247, 255, 248);
     display: flex;
     flex-direction: column;
@@ -365,28 +374,38 @@ footer{
 }
 
 .links-footer{
-    width: 80%;
     text-align: center;
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
   
 }
 
+.links-footer a:hover{
+    background-color: rgb(62, 97, 62);
+    padding: 18px 40px;
+    transition: all .5s;
+}
+
 .socials{
-    width: 40%;
     margin-inline: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
-.fa-brands{
+.brand{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 24px;
-    padding: 8px 12px;
+    cursor: pointer;
     border: 1px solid green;
 }
-.fa-brands:hover{
+.brand:hover{
     transition: all .5s ease-in;
     color: white;
     background-color: rgb(62, 97, 62);
@@ -410,21 +429,44 @@ footer{
      .logo{
         width: 50px;
      }
-    .nav-list{
+    .nav-icons{
         width: 50px;
-        visibility: visible;
+        display: block;
+        font-size: 20px;
+        text-align: right;
+    } 
+    .nav-icons .fa-xmark{
+        display: none;
     }
     .desktop-nav{
         display: none;
     }
     .mobile-nav{
         display: flex;
-        flex-direction: column;
-        justify-content: right;
-        align-items: center;
-        gap: 5px;
-        padding-block: 10px;
     }
+
+    .mobile-nav-links{
+        /* display: flex; */
+        margin-inline: auto 0;
+        position: absolute;
+        top: -1000px;
+        inset-inline: 0;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 20px;
+        padding-block: 10px;
+        width: 40%;
+        background-color: white;
+        transition: all .7s;
+    }
+    .mobile-nav-links li{
+      padding-block: 8px;
+        cursor: pointer;
+    }
+    .mobile-nav-links li:hover{
+        color: rgb(101, 130, 101);
+    }
+
     .hero{
         width: 100%;
         background-image: url("https://zf2xqj.yourbrand.studio/files/dynamicContent/sites/zf2xqj/images/en/webpage_12/m5p6bgzu/element_369/rwdMode_4/640x499/Header_Home_mobile.webp");
