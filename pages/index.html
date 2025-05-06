@@ -18,10 +18,7 @@
       <nav>
         <div class="nav-container">
           <div class="logo">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-moCoCG30Y6Mh5V7e37sCfwCFbZZOczLsnRFio1b39FytzhOS8I8Po7fusqzWRgTkUrI&usqp=CAU"
-              alt=""
-            />
+            <img src="../assets/logo.webp" alt="" />
           </div>
           <div class="nav-icons" id="nav-icons">
             <i class="fa-solid fa-bars" id="bars"></i>
@@ -367,21 +364,74 @@
         </div>
       </section>
 
+      <section class="philo">
+        <div class="phil-txts">
+          <h2>My philosophy</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            rutrum libero nec odio vulputate, sed finibus nisl lobortis. Morbi
+            justo arcu, viverra venenatis maximus ut, sagittis in diam.
+            Phasellus sollicitudin euismod auctor. Etiam ornare, felis et
+            molestie maximus, ex dolor cursus eros, non gravida lorem turpis
+            congue eros. Nam molestie odio leo, et lacinia augue varius at.
+            Aliquam elementum lorem eu massa semper, ac volutpat lectus
+            sagittis. Pellentesque faucibus massa ac elit mollis, et pretium
+            ligula elementum. Nullam vel fringilla nisi, in tincidunt dui.
+            Curabitur ac arcu ligula. Vestibulum sed dui euismod, dapibus ex ac,
+            porta leo. Nulla a ipsum mattis, facilisis urna nec, rhoncus elit.
+          </p>
+        </div>
+        <div class="phil-imgs">
+          <div class="img-rear">
+            <img
+              src="https://zf2xqj.yourbrand.studio/files/dynamicContent/sites/zf2xqj/images/en/webpage_12/m5p6bgzu/element_307/rwdMode_1/600x558/My-philosophy_1.webp"
+              alt=""
+            />
+          </div>
+          <div class="img-front">
+            <img
+              src="https://zf2xqj.yourbrand.studio/files/dynamicContent/sites/zf2xqj/images/en/webpage_12/m5p6bgzu/element_306/rwdMode_1/352x384/Woman.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
       <section class="sec-5">
         <div class="subs">
           <h1>Subscribe</h1>
         </div>
         <form action="">
-          <label for="email">Your-email:</label>
-          <input type="email" id="email" placeholder="address@email.com" />
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            id="message"
-            rows="6"
-            placeholder="Enter your message here"
-          ></textarea>
-          <button id="send">send</button>
+          <div class="form-inputs">
+            <div class="input">
+              <div class="email-label">
+                <label for="email">Your-email:</label>
+              </div>
+              <div class="email-input">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="address@email.com"
+                />
+              </div>
+            </div>
+            <div class="textarea">
+              <div class="message-label">
+                <label for="message">Message:</label>
+              </div>
+              <div class="message-textarea">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  placeholder="Enter your message here"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-btn">
+            <button id="send">send</button>
+          </div>
         </form>
       </section>
     </main>

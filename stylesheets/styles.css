@@ -27,7 +27,7 @@ nav{
 }
 
 .nav-container{
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ nav{
 }
 
 .logo{
-    width: 100px;
+    width: 120px;
 }
 img{
     width: 100%;
@@ -50,6 +50,14 @@ img{
     justify-content: space-between;
     gap: 2rem;
 }
+
+.desktop-nav li{
+    cursor: pointer;
+}
+.desktop-nav li:hover{
+    color: rgb(101, 130, 101);
+}
+
 .mobile-nav{
     display: none;
 }
@@ -60,7 +68,8 @@ li, a{
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(62, 97, 62);
-    list-style-type: none;
+    list-style: none;
+    font-size: 17px;
 }
 
 .hero{
@@ -135,11 +144,9 @@ section{
     margin-block: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    gap: 30px;
 }
-/* .grid-child{
-    border: 1px solid black;
-} */
+
 .box{
     display: flex;
     flex-direction: column;
@@ -151,7 +158,7 @@ section{
     aspect-ratio: 1/1.5;
 }
 #cat-title{
-    width: 210px;
+    width: 90%;
     height: 70px;
     text-align: center;
     display: flex;
@@ -162,8 +169,8 @@ section{
     background-color: rgb(101, 130, 101);
     text-transform: uppercase;
     position: absolute;
-    bottom: -40px;
-    left: 20px;
+    bottom: -9%;
+    left: 5%;
 }
 #cat-title:hover{
     background-color: rgb(62, 97, 62);
@@ -174,6 +181,8 @@ section{
 .grid-text{
     text-align: center;
     margin-inline: auto;
+    color: black;
+    font-size: 18px;
 }
  p{
     line-height: 1.7;
@@ -319,14 +328,81 @@ hr{
     line-height: 1.4;
 }
 
-.sec-5{
-    width: 60%;
+.philo{
+    width: 90%;
     margin-inline: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 100px;
+}
+
+.phil-txts{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.phil-txts h2{
+    font-size: 44px;
+    font-family: Lora;
+}
+.phil-txts p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.phil-imgs{
+    width: 50%;
+    position: relative;
+}
+
+.img-rear{
+    width: 100%;
+}
+.img-rear img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.img-front{
+    width: 70%;
+    position: absolute;
+    bottom: -8%;
+    left: -9%;
+    padding: 20px;
+    background-color: white;
+}
+.img-front img{
+    aspect-ratio: 2/2.5;
+    object-fit: cover;
+}
+
+.sec-5{
+    width: 70%;
+    margin-inline: auto;
+    margin-block: 100px;
 }
 .sec-5 h1{
     margin-bottom: 40px;
 }
 
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input, .textarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 label{
     color: rgb(101, 130, 101);
 }
@@ -336,14 +412,9 @@ input, textarea, button{
     padding: 15px;
     border: 1px solid rgba(62, 97, 62, 0.209);
 }
-input, textarea{
-    margin-block: 15px 20px;
-}
-textarea{
-    margin-top: 15px;
-}
-input::placeholder,
-textarea::placeholder{
+
+.email-input input::placeholder,
+.message-textarea textarea::placeholder{
     color: grey;
     font-size: 16px;
     opacity: .6;
@@ -363,7 +434,6 @@ textarea::placeholder{
 }
 
 footer{
-    /* height: 150px; */
     padding-block: 20px;
     background-color: rgb(247, 255, 248);
     display: flex;
@@ -383,9 +453,9 @@ footer{
 }
 
 .links-footer a:hover{
-    background-color: rgb(62, 97, 62);
-    padding: 18px 40px;
-    transition: all .5s;
+    background-color: rgb(101, 130, 101);
+    padding: 12px 20px;
+    color: white;
 }
 
 .socials{
