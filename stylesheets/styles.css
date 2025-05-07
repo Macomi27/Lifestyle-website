@@ -107,7 +107,7 @@ span{
     width: 20%;
     margin-left: 30%;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: left;
     color: rgb(101, 130, 101)
 }
@@ -121,7 +121,6 @@ section{
 .sec-1{
     display: flex;
     justify-content: space-between;
-    height: 80vh;
 }
 .left{
     line-height: 1.5;
@@ -501,7 +500,23 @@ footer{
 
 
 @media (max-width:1200px) {
-    
+    .logo{
+        width: 150px;
+    }
+
+    .desktop-nav li>a{
+        font-size: 20px;
+    }
+
+    .hero{
+        height: 80vh;
+        background-position: calc(100%-20%);
+    }
+
+    .text-box{
+        font-size: 60px;
+        margin-left: 20%;
+    }
 }
 
 
