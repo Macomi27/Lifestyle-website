@@ -58,6 +58,24 @@ img{
     color: rgb(101, 130, 101);
 }
 
+/* .cat-list-links{
+    display: block;
+}
+#category-list:hover{
+    display: flex;
+    margin-inline: auto 0;
+    position: absolute;
+    top: -1000px;
+    inset-inline: 0;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 20px;
+    padding-block: 10px;
+    width: 40%;
+    background-color: gainsboro;
+    transition: all .5s;
+} */
+
 .mobile-nav{
     display: none;
 }
@@ -481,7 +499,13 @@ footer{
     background-color: rgb(62, 97, 62);
 }
 
-@media (max-width:768px) {
+
+@media (max-width:1200px) {
+    
+}
+
+
+@media (max-width:767px) {
     header{
         margin-bottom: 0px;
     }
