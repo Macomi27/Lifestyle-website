@@ -349,6 +349,11 @@ hr{
     overflow: hidden;
 
 }
+
+#cont-tablet{
+    display: none;
+}
+
 .cont img{
     width: 200px;
     height: 200px;
@@ -581,7 +586,7 @@ footer{
     }
     
     .article-sec{
-        width: 85%;
+        width: 75%;
     }
 
     .article-boxes1,
@@ -598,7 +603,7 @@ footer{
         display: block;
     }
 
-    .hr{
+    .hr, .hr-tablet{
         display: block;
     }
 
@@ -608,22 +613,86 @@ footer{
 
     #sec-4{
         width: 85%;
+        margin-inline: auto;
         flex-direction: column;
-        margin-bottom: 100px;
+        gap: 50px;
     }
     .right-pan, .left-pan{
         width: 100%;
     }
+
+
+    .imgs{
+        width: 90%;
+    }
+
+    .sm-img{
+        right: 0;
+        padding-right: 0;
+        bottom: -30px;
+    }
+
     .left-pan h1{
         width: 60%;
         margin-inline: auto;
+        margin-bottom: 40px;
     }
+
+    .cont-grid-tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #cont-tablet{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
     .cont{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .cont img{
+        width: 100%;
+    }
+
+    .cont-title{
+        font-size: 20px;
+        line-height: 1.3;
+        font-family: Lora;
+        margin-bottom: 10px;
+    }
+
+
+    .philo{
+        width: 85%;
         flex-direction: column;
     }
 
-    .sec-5{
+    .phil-txts{
+        width: 100%;
+    }
+    .phil-txts h2{
+        text-align: center;
+    }
+
+    .phil-imgs{
         width: 85%;
+    }
+
+    .img-front{
+        bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .sec-5{
+        width: 75%;
     }
 }
 
