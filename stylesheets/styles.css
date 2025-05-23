@@ -98,6 +98,7 @@ li, a{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 span{
     color: rgb(62, 97, 62);
@@ -210,6 +211,14 @@ section{
     width: 85%;
 }
 
+.article-title{
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
 .article-boxes1,
 .article-boxes2{
     display: grid;
@@ -227,10 +236,16 @@ section{
     transition: transform .5s;
 }
 
+.art-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .title{
     font-size: 36px;
     font-weight: 500;
-    margin-block: 20px;
     font-family: Montserrat;
     color: rgb(5, 5, 5);
 }
@@ -243,7 +258,7 @@ section{
     font-size: 14px;
     color: rgb(5, 5, 5);
     opacity: .4;
-    margin-block: 10px;
+    margin-bottom: 5px;
 }
 
 .art-par-s{
@@ -259,13 +274,18 @@ hr{
     color: rgb(62, 97, 62);
     opacity: .4;
     margin-block: 25px;
-    width: 90vw;
-    margin-inline: auto;
 }
 .more{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 5px;
+}
+.more a{
+    font-size: 16px;
+    font-family: Lora;
+    font-weight: 400;
+    text-transform: none;
 }
 .more:hover{
     text-decoration: underline;
@@ -522,8 +542,12 @@ footer{
         margin-left: 20%;
     }
 
+    .text-box{
+        font-size: 46px;
+    }
+
     section{
-        width: 90%;
+        width: 85%;
         margin-block: 30px;
     }
 
@@ -536,10 +560,14 @@ footer{
         font-size: 24px;
     }
     .sec-1 p{
-        font-size: 20px;
+        font-size: 16px;
     }
     .left, .right{
         width: 50%;
+    }
+
+    .right img{
+        aspect-ratio: 1/1.2;
     }
 
     .sec-cat{
@@ -549,17 +577,33 @@ footer{
 
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
     }
     
-    .article-block{
-        flex-direction: column;
-        width: 70%;
-        margin-inline: auto;
-        margin-bottom: 100px;
+    .article-sec{
+        width: 85%;
     }
 
-    .art-details, .right-side{
+    .article-boxes1,
+    .article-boxes2{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .art-details{
         width: 100%;
+    }
+
+    .art-par-s{
+        display: block;
+    }
+
+    .hr{
+        display: block;
+    }
+
+    .hr-desktop{
+        display: none;
     }
 
     #sec-4{
@@ -576,6 +620,10 @@ footer{
     }
     .cont{
         flex-direction: column;
+    }
+
+    .sec-5{
+        width: 85%;
     }
 }
 
